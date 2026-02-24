@@ -67,7 +67,7 @@ Book on WhatsApp
 <section id="vehicles" class="py-16 max-w-7xl mx-auto px-4">
 <h2 class="text-3xl font-bold text-center mb-10">Our Fleet</h2>
 
-<div class="grid md:grid-cols-4 gap-6">
+<div class="grid md:grid-cols-5 gap-6">
 
 <div class="bg-white rounded-xl overflow-hidden card">
 <img src="https://images.unsplash.com/photo-1598528883783-d33f9631a1d4" loading="lazy">
@@ -105,6 +105,16 @@ Book on WhatsApp
 </div>
 </div>
 
+<!-- NEW -->
+<div class="bg-white rounded-xl overflow-hidden card">
+<img src="https://images.unsplash.com/photo-1583267746897-2cf415887172" loading="lazy">
+<div class="p-4">
+<h3 class="font-bold">Tempo Traveller</h3>
+<p class="text-orange-600 font-bold">₹30/km</p>
+<button onclick="bookCar('Tempo Traveller')" class="w-full bg-black text-white py-2 mt-2 rounded">Book</button>
+</div>
+</div>
+
 </div>
 </section>
 
@@ -129,20 +139,40 @@ Book on WhatsApp
 
 <!-- ROUTES -->
 <section class="py-16 bg-gray-50 text-center">
-<h2 class="text-3xl font-bold mb-8">Popular Routes</h2>
+<h2 class="text-3xl font-bold mb-8">Popular Destinations</h2>
 
-<div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+<div class="grid md:grid-cols-4 gap-6 max-w-7xl mx-auto px-4">
 
-<div class="bg-white p-6 rounded shadow">
-Ahmedabad → Rajkot<br>₹2500
+<div class="bg-white rounded-xl overflow-hidden shadow">
+<img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b" class="h-40 w-full object-cover">
+<div class="p-4">
+<h3 class="font-bold">Dwarka / Somnath</h3>
+<button onclick="bookRoute('Dwarka / Somnath')" class="mt-2 bg-green-500 text-white px-4 py-2 rounded w-full">Book on WhatsApp</button>
+</div>
 </div>
 
-<div class="bg-white p-6 rounded shadow">
-Ahmedabad → Surat<br>₹3000
+<div class="bg-white rounded-xl overflow-hidden shadow">
+<img src="https://images.unsplash.com/photo-1593693397690-362cb9666fc2" class="h-40 w-full object-cover">
+<div class="p-4">
+<h3 class="font-bold">Mount Abu</h3>
+<button onclick="bookRoute('Mount Abu')" class="mt-2 bg-green-500 text-white px-4 py-2 rounded w-full">Book on WhatsApp</button>
+</div>
 </div>
 
-<div class="bg-white p-6 rounded shadow">
-Ahmedabad → Vadodara<br>₹1500
+<div class="bg-white rounded-xl overflow-hidden shadow">
+<img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3" class="h-40 w-full object-cover">
+<div class="p-4">
+<h3 class="font-bold">Statue of Unity</h3>
+<button onclick="bookRoute('Statue of Unity')" class="mt-2 bg-green-500 text-white px-4 py-2 rounded w-full">Book on WhatsApp</button>
+</div>
+</div>
+
+<div class="bg-white rounded-xl overflow-hidden shadow">
+<img src="https://images.unsplash.com/photo-1609948543911-9b4f1cb5d2c6" class="h-40 w-full object-cover">
+<div class="p-4">
+<h3 class="font-bold">Rann of Kutch</h3>
+<button onclick="bookRoute('Rann of Kutch')" class="mt-2 bg-green-500 text-white px-4 py-2 rounded w-full">Book on WhatsApp</button>
+</div>
 </div>
 
 </div>
@@ -195,10 +225,10 @@ Ahmedabad → Vadodara<br>₹1500
 
 <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
 <p>📞 9510375166</p>
-<p>Ahmedabad, Gujarat</p>
+<p>E-301, Sangath 1, Near Motera Stadium,<br>Motera, Ahmedabad - 380005</p>
 
 <div class="mt-6 max-w-4xl mx-auto px-4">
-<iframe src="https://www.google.com/maps?q=Ahmedabad&output=embed"
+<iframe src="https://www.google.com/maps?q=E-301,Sangath+1,Motera,Ahmedabad&output=embed"
 class="w-full h-64 rounded-xl"></iframe>
 </div>
 
@@ -220,6 +250,11 @@ window.open(`https://wa.me/919510375166?text=${encodeURIComponent(text)}`);
 
 function bookService(service){
 let text = `Hello, I want to book ${service}`;
+window.open(`https://wa.me/919510375166?text=${encodeURIComponent(text)}`);
+}
+
+function bookRoute(place){
+let text = `Hello, I want to book a trip to ${place}`;
 window.open(`https://wa.me/919510375166?text=${encodeURIComponent(text)}`);
 }
 
