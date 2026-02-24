@@ -4,21 +4,31 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Ahmedabad Car Rental | Taxi Service</title>
-<meta name="description" content="Best taxi service in Ahmedabad. Swift, Ertiga, Innova, Urbania available. Book now on WhatsApp.">
+<title>Ahmedabad Car Rental | Premium Taxi Service</title>
+<meta name="description" content="Best taxi service in Ahmedabad. Book Swift Dzire, Ertiga, Innova Crysta & Urbania. WhatsApp booking available.">
 
 <script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 body { font-family: 'Poppins', sans-serif; }
+
 .hero {
-background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
-url('https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1920');
+background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)),
+url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1920');
 background-size: cover;
 background-position: center;
 }
-.card:hover { transform: translateY(-5px); transition: 0.3s; }
+
+.nav-link:hover { color:#f97316; }
+
+.card {
+transition: all 0.3s ease;
+}
+.card:hover {
+transform: translateY(-8px);
+box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
 </style>
 </head>
 
@@ -26,136 +36,166 @@ background-position: center;
 
 <!-- HEADER -->
 <header class="bg-white shadow fixed w-full z-50">
-<div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-<h1 class="font-bold text-xl text-orange-600">Ahmedabad Car Rental</h1>
+<div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
 
-<nav class="hidden md:flex gap-6 font-medium">
-<a href="#home">Home</a>
-<a href="#introduction">Introduction</a>
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#vehicles">Vehicles</a>
-<a href="#inquiry">Inquiry</a>
-<a href="#contact">Contact</a>
+<h1 class="text-2xl font-bold text-orange-600">Ahmedabad Car Rental</h1>
+
+<nav class="hidden md:flex gap-8 font-medium">
+<a href="#home" class="nav-link">Home</a>
+<a href="#introduction" class="nav-link">Introduction</a>
+<a href="#about" class="nav-link">About</a>
+<a href="#services" class="nav-link">Services</a>
+<a href="#vehicles" class="nav-link">Vehicles</a>
+<a href="#inquiry" class="nav-link">Inquiry</a>
+<a href="#contact" class="nav-link">Contact</a>
 </nav>
 
-<a href="https://wa.me/919510375166" class="bg-orange-600 text-white px-4 py-2 rounded-full">Book</a>
+<a href="https://wa.me/919510375166?text=Hello I want to book a cab"
+class="bg-orange-600 text-white px-5 py-2 rounded-full hover:bg-orange-700 transition">
+Book Now
+</a>
+
 </div>
 </header>
 
 <!-- HERO -->
 <section id="home" class="hero h-screen flex items-center justify-center text-center text-white px-4 pt-20">
-<div>
-<h2 class="text-4xl md:text-6xl font-bold mb-4">Trusted Taxi Service in Ahmedabad</h2>
-<p class="mb-6">Safe • Affordable • 24/7 Available</p>
+
+<div class="max-w-3xl">
+<h2 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">
+Reliable Taxi Service in Ahmedabad
+</h2>
+
+<p class="text-lg mb-6 text-gray-200">
+Comfortable rides • Transparent pricing • 24/7 availability
+</p>
 
 <a href="https://wa.me/919510375166?text=Hello I want to book a cab"
-class="bg-orange-600 px-6 py-3 rounded-full font-bold">Book on WhatsApp</a>
+class="bg-orange-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-orange-700 transition shadow-lg">
+Book on WhatsApp
+</a>
 </div>
+
 </section>
 
-<!-- WHY -->
-<section class="py-12 bg-white text-center">
-<div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
-<div><h3 class="font-bold text-xl">Safe Ride</h3><p>Verified drivers</p></div>
-<div><h3 class="font-bold text-xl">Best Price</h3><p>No hidden charges</p></div>
-<div><h3 class="font-bold text-xl">24/7 Support</h3><p>Always available</p></div>
+<!-- WHY US -->
+<section class="py-16 bg-white">
+<div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8 text-center">
+
+<div>
+<h3 class="text-xl font-bold mb-2">Safe & Secure</h3>
+<p class="text-gray-600">Verified drivers & well-maintained vehicles</p>
+</div>
+
+<div>
+<h3 class="text-xl font-bold mb-2">Transparent Pricing</h3>
+<p class="text-gray-600">No hidden charges</p>
+</div>
+
+<div>
+<h3 class="text-xl font-bold mb-2">24/7 Support</h3>
+<p class="text-gray-600">Always available for you</p>
+</div>
+
 </div>
 </section>
 
 <!-- VEHICLES -->
-<section id="vehicles" class="py-16 max-w-7xl mx-auto px-4">
-<h2 class="text-3xl font-bold text-center mb-10">Our Fleet</h2>
+<section id="vehicles" class="py-16 bg-gray-50">
+<div class="max-w-7xl mx-auto px-4">
 
-<div class="grid md:grid-cols-4 gap-6">
+<h2 class="text-4xl font-bold text-center mb-12">
+Our Fleet
+</h2>
 
-<div class="bg-white p-4 rounded shadow card">
-<img src="https://images.unsplash.com/photo-1598528883783-d33f9631a1d4" class="rounded mb-2">
-<h3 class="font-bold">Swift Dzire</h3>
-<p class="text-orange-600 font-bold">₹11/km</p>
-<button onclick="bookCar('Swift Dzire')" class="w-full bg-black text-white py-2 mt-2 rounded">Book</button>
+<div class="grid md:grid-cols-4 gap-8">
+
+<!-- CARD -->
+<div class="bg-white rounded-xl overflow-hidden card">
+<img src="https://images.unsplash.com/photo-1598528883783-d33f9631a1d4" class="w-full h-48 object-cover">
+<div class="p-5">
+<h3 class="text-lg font-bold">Swift Dzire</h3>
+<p class="text-orange-600 font-bold text-xl mb-3">₹11/km</p>
+<button onclick="bookCar('Swift Dzire')" class="w-full bg-black text-white py-2 rounded">Book Now</button>
+</div>
 </div>
 
-<div class="bg-white p-4 rounded shadow card">
-<img src="https://images.unsplash.com/photo-1617788138017-80ad40651399" class="rounded mb-2">
-<h3 class="font-bold">Ertiga</h3>
-<p class="text-orange-600 font-bold">₹14/km</p>
-<button onclick="bookCar('Ertiga')" class="w-full bg-black text-white py-2 mt-2 rounded">Book</button>
+<div class="bg-white rounded-xl overflow-hidden card">
+<img src="https://images.unsplash.com/photo-1617788138017-80ad40651399" class="w-full h-48 object-cover">
+<div class="p-5">
+<h3 class="text-lg font-bold">Ertiga</h3>
+<p class="text-orange-600 font-bold text-xl mb-3">₹14/km</p>
+<button onclick="bookCar('Ertiga')" class="w-full bg-black text-white py-2 rounded">Book Now</button>
+</div>
 </div>
 
-<div class="bg-white p-4 rounded shadow card">
-<img src="https://images.unsplash.com/photo-1605218427368-35b019b8bcbd" class="rounded mb-2">
-<h3 class="font-bold">Innova Crysta</h3>
-<p class="text-orange-600 font-bold">₹19/km</p>
-<button onclick="bookCar('Innova Crysta')" class="w-full bg-black text-white py-2 mt-2 rounded">Book</button>
+<div class="bg-white rounded-xl overflow-hidden card">
+<img src="https://images.unsplash.com/photo-1605218427368-35b019b8bcbd" class="w-full h-48 object-cover">
+<div class="p-5">
+<h3 class="text-lg font-bold">Innova Crysta</h3>
+<p class="text-orange-600 font-bold text-xl mb-3">₹19/km</p>
+<button onclick="bookCar('Innova Crysta')" class="w-full bg-black text-white py-2 rounded">Book Now</button>
+</div>
 </div>
 
-<div class="bg-white p-4 rounded shadow card">
-<img src="https://images.unsplash.com/photo-1565043666747-69f6646db940" class="rounded mb-2">
-<h3 class="font-bold">Urbania</h3>
-<p class="text-orange-600 font-bold">₹32/km</p>
-<button onclick="bookCar('Urbania')" class="w-full bg-black text-white py-2 mt-2 rounded">Book</button>
+<div class="bg-white rounded-xl overflow-hidden card">
+<img src="https://images.unsplash.com/photo-1565043666747-69f6646db940" class="w-full h-48 object-cover">
+<div class="p-5">
+<h3 class="text-lg font-bold">Urbania</h3>
+<p class="text-orange-600 font-bold text-xl mb-3">₹32/km</p>
+<button onclick="bookCar('Urbania')" class="w-full bg-black text-white py-2 rounded">Book Now</button>
+</div>
 </div>
 
 </div>
-</section>
-
-<!-- INTRO -->
-<section id="introduction" class="py-16 bg-white max-w-6xl mx-auto px-4">
-<h2 class="text-3xl font-bold mb-4">Introduction</h2>
-<p>We provide best taxi services in Ahmedabad and across Gujarat with reliable drivers and affordable pricing.</p>
-</section>
-
-<!-- ABOUT -->
-<section id="about" class="py-16 bg-gray-50 max-w-6xl mx-auto px-4">
-<h2 class="text-3xl font-bold mb-4">About Us</h2>
-<p>Customer satisfaction is our priority. We offer premium cab services with professional drivers.</p>
+</div>
 </section>
 
 <!-- SERVICES -->
-<section id="services" class="py-16 max-w-6xl mx-auto px-4">
-<h2 class="text-3xl font-bold mb-6">Services</h2>
+<section id="services" class="py-16 bg-white">
+<div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-8">
 
-<div class="grid md:grid-cols-2 gap-6">
-
-<div class="bg-white p-6 shadow rounded">
-<h3 class="font-bold text-xl mb-2">One Way Cab</h3>
-<p>Affordable one-way trips across cities.</p>
-<button onclick="bookService('One Way Cab')" class="text-orange-600 font-bold mt-2">Book</button>
+<div class="bg-gray-50 p-8 rounded-xl">
+<h3 class="text-2xl font-bold mb-3">One Way Cab</h3>
+<p class="text-gray-600 mb-4">Affordable one-way trips to cities.</p>
+<button onclick="bookService('One Way Cab')" class="text-orange-600 font-bold">Book →</button>
 </div>
 
-<div class="bg-white p-6 shadow rounded">
-<h3 class="font-bold text-xl mb-2">Round Trip Cab</h3>
-<p>Best for tours and return journeys.</p>
-<button onclick="bookService('Round Trip Cab')" class="text-orange-600 font-bold mt-2">Book</button>
+<div class="bg-gray-50 p-8 rounded-xl">
+<h3 class="text-2xl font-bold mb-3">Round Trip Cab</h3>
+<p class="text-gray-600 mb-4">Best for tours and return journeys.</p>
+<button onclick="bookService('Round Trip Cab')" class="text-orange-600 font-bold">Book →</button>
 </div>
 
 </div>
 </section>
 
 <!-- INQUIRY -->
-<section id="inquiry" class="py-16 bg-white max-w-4xl mx-auto px-4">
-<h2 class="text-3xl font-bold mb-6 text-center">Inquiry</h2>
+<section id="inquiry" class="py-16 bg-gray-50">
+<div class="max-w-4xl mx-auto px-4">
 
-<form id="form" class="space-y-4">
+<h2 class="text-3xl font-bold text-center mb-6">Quick Inquiry</h2>
+
+<form id="form" class="bg-white p-6 rounded-xl shadow space-y-4">
 
 <input id="name" placeholder="Name" class="w-full p-3 border rounded" required>
 <input id="phone" placeholder="Phone" class="w-full p-3 border rounded" required>
-<input id="pickup" placeholder="Pickup" class="w-full p-3 border rounded" required>
-<input id="drop" placeholder="Drop" class="w-full p-3 border rounded" required>
+<input id="pickup" placeholder="Pickup Location" class="w-full p-3 border rounded" required>
+<input id="drop" placeholder="Drop Location" class="w-full p-3 border rounded" required>
 <input id="date" type="date" class="w-full p-3 border rounded" required>
 <textarea id="msg" placeholder="Message" class="w-full p-3 border rounded"></textarea>
 
-<button class="w-full bg-orange-600 text-white py-3 rounded">Send</button>
+<button class="w-full bg-orange-600 text-white py-3 rounded text-lg">Submit</button>
 
 </form>
+</div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact" class="bg-gray-900 text-white py-12 text-center">
 <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
-<p>Ahmedabad & Gujarat</p>
 <p>📞 9510375166</p>
+<p>Ahmedabad & Gujarat</p>
 </section>
 
 <!-- FOOTER -->
@@ -165,7 +205,7 @@ class="bg-orange-600 px-6 py-3 rounded-full font-bold">Book on WhatsApp</a>
 
 <!-- WHATSAPP FLOAT -->
 <a href="https://wa.me/919510375166"
-class="fixed bottom-5 right-5 bg-green-500 text-white p-4 rounded-full text-xl">💬</a>
+class="fixed bottom-5 right-5 bg-green-500 text-white p-4 rounded-full text-xl shadow-lg">💬</a>
 
 <!-- SCRIPT -->
 <script>
