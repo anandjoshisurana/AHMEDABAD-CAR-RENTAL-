@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>Ahmedabad Car Rental | Taxi Service in Ahmedabad</title>
+    <meta name="description" content="Book affordable taxi in Ahmedabad. Swift Dzire, Ertiga, Innova Crysta & Urbania available. 24/7 cab service. Call now!">
+    <meta name="keywords" content="Ahmedabad taxi, car rental Ahmedabad, cab service Gujarat, Innova taxi Ahmedabad">
+    <meta name="author" content="Ahmedabad Car Rental">
+
+    <!-- Open Graph (WhatsApp/Facebook Preview) -->
+    <meta property="og:title" content="Ahmedabad Car Rental">
+    <meta property="og:description" content="Affordable & reliable taxi service in Ahmedabad.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3448/3448339.png">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
+            url('https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            transition: 0.3s;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-700">
+
+<!-- HEADER -->
+<header class="bg-white shadow fixed w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+        <h1 class="font-bold text-xl text-orange-600">
+            🚕 Ahmedabad Car Rental
+        </h1>
+
+        <a href="https://wa.me/919510375166"
+           class="bg-orange-600 text-white px-4 py-2 rounded-full hover:bg-orange-700 transition">
+            Book Now
+        </a>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero h-screen flex items-center justify-center text-center text-white px-4 pt-20">
+    <div>
+        <h2 class="text-4xl md:text-6xl font-bold mb-4">
+            Best Taxi Service in Ahmedabad
+        </h2>
+        <p class="mb-6 text-lg">
+            Safe • Affordable • 24/7 Available
+        </p>
+
+        <a href="https://wa.me/919510375166"
+           class="bg-orange-600 px-6 py-3 rounded-full font-bold hover:bg-orange-700 transition">
+            Book on WhatsApp
+        </a>
+    </div>
+</section>
+
+<!-- VEHICLES -->
+<section class="py-16 max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-10">Our Fleet</h2>
+
+    <div class="grid md:grid-cols-4 gap-6">
+
+        <!-- CARD -->
+        <div class="bg-white rounded-xl shadow p-4 card">
+            <img src="https://images.unsplash.com/photo-1598528883783-d33f9631a1d4"
+                 class="rounded-lg mb-3">
+            <h3 class="font-bold">Swift Dzire</h3>
+            <p class="text-orange-600 font-bold">₹11/km</p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-4 card">
+            <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399"
+                 class="rounded-lg mb-3">
+            <h3 class="font-bold">Ertiga</h3>
+            <p class="text-orange-600 font-bold">₹14/km</p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-4 card">
+            <img src="https://images.unsplash.com/photo-1605218427368-35b019b8bcbd"
+                 class="rounded-lg mb-3">
+            <h3 class="font-bold">Innova Crysta</h3>
+            <p class="text-orange-600 font-bold">₹19/km</p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-4 card">
+            <img src="https://images.unsplash.com/photo-1565043666747-69f6646db940"
+                 class="rounded-lg mb-3">
+            <h3 class="font-bold">Urbania</h3>
+            <p class="text-orange-600 font-bold">₹32/km</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="bg-gray-900 text-white py-12 text-center">
+    <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+    <p class="mb-4">Ahmedabad & All Gujarat</p>
+
+    <a href="tel:9510375166" class="block mb-2">📞 9510375166</a>
+    <a href="mailto:info@ahmedabadcarrental.com">✉️ Email Us</a>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center py-4 bg-black text-gray-400">
+    <p id="year"></p>
+</footer>
+
+<script>
+    // Auto Year
+    document.getElementById("year").innerText =
+        "© " + new Date().getFullYear() + " Ahmedabad Car Rental";
+
+    // WhatsApp Quick Function
+    function book(vehicle) {
+        window.open(`https://wa.me/919510375166?text=I want to book ${vehicle}`);
+    }
+</script>
+
+</body>
+</html>
